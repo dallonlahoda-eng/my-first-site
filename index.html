@@ -622,7 +622,8 @@
 
   <!-- Footer -->
   <footer>
-    <p>&copy; 2026 Dallon Lahoda. All rights reserved.</p>
+    <p>&copy; <span id="current-year"></span> Test User. All rights reserved.</p>
+    <p style="margin-top: 0.5rem; font-size: 0.8rem;">Built with OpenMono Agent</p>
   </footer>
 
   <!-- JavaScript: Fade-in on scroll -->
@@ -665,6 +666,9 @@
 
       heroObserver.observe(heroContent);
     }
+
+    // Set current year in footer
+    document.getElementById('current-year').textContent = new Date().getFullYear();
   </script>
 
 </body>
